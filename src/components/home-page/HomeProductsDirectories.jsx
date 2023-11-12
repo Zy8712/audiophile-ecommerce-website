@@ -7,7 +7,7 @@ function HomeProductsDirectories() {
     return (
         <>
             <div className="w-full flex justify-center items-center pt-[120px] pb-[200px]">
-                <div className="w-[1110px] h-[2536px] flex flex-col border-blue-500 border-solid border-2">
+                <div className="w-[1110px] h-[2536px] flex flex-col">
 
                     <ProductCategories />
 

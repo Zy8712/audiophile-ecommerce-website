@@ -1,6 +1,8 @@
 import FeaturedNewProduct from "../../assets/home/desktop/figma_download_hero_bitmap_copy3.jpg";
 import OrangeProductButton from "../OrangeProductButton";
 
+import { Link } from "wouter";
+
 function HomeHero() {
 
     return (
@@ -17,7 +19,9 @@ function HomeHero() {
                         <p className="w-[349px] text-white opacity-75 font-medium text-[15px] leading-[25px] mb-[30px]">
                             Experience natural, lifelike audio and exceptional build quality made for the passionate music enthusiast.
                         </p>
-                        <OrangeProductButton />
+                        <Link to="./headphones/xx99markiiheadphones">
+                            <OrangeProductButton />
+                        </Link>
                     </div>
                     <div className="">
                         <img src={FeaturedNewProduct} className=" rounded-full border-none opacity-70 bg-blend-hard-light -z-10" />

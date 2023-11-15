@@ -19,7 +19,7 @@ function SpeakersProductListings() {
                     It’s a bookshelf speaker system that offers truly wireless connectivity -- 
                     creating new possibilities for more pleasing and practical audio setups."
                     lineBreak={true}
-                    link="/speakers/zx9speaker"
+                    link="/zx9speaker"
                 />
 
                 <ProductCardImageRight
@@ -30,7 +30,7 @@ function SpeakersProductListings() {
                     speaker uses high-end audiophile components that represents the top of the line powered 
                     speakers for home or studio use."
                     lineBreak={true}
-                    link="/speakers/zx7speaker"
+                    link="/zx7speaker"
                 />
                 
             </div>

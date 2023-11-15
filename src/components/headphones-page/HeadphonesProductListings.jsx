@@ -21,7 +21,7 @@ function HeadphonesProductListings() {
                     It redefines your premium headphone experience by reproducing the balanced depth 
                     and precision of studio-quality sound."
                     lineBreak={true}
-                    link="./headphones/xx99markiiheadphones"
+                    link="./xx99markiiheadphones"
                 />
 
                 <ProductCardImageRight
@@ -32,7 +32,7 @@ function HeadphonesProductListings() {
                     detailed and accurate audio reproduction for audiophiles, mixing engineers, and music 
                     aficionados alike in studios and on the go."
                     lineBreak={true}
-                    link="./headphones/xx99markiheadphones"
+                    link="./xx99markiheadphones"
                 />
 
                 <ProductCardImageLeft
@@ -43,7 +43,7 @@ function HeadphonesProductListings() {
                     the XX59 headphones. The stylish yet durable versatile wireless headset is a brilliant companion 
                     at home or on the move."
                     lineBreak={true}
-                    link="./headphones/xx59headphones"
+                    link="./xx59headphones"
                 />
             </div>
         </>

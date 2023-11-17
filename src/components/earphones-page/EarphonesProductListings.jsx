@@ -1,14 +1,13 @@
 import YX1EARPHONES from "../../assets/product-yx1-earphones/desktop/image-category-page-preview.jpg";
 
-import NewProductCard from "../NewProductCard";
-
+import ProductCardImageLeft from "../product-category-pages/ProductCardImageLeft";
 
 function EarphonesProductListings() {
 
     return (
         <>
             <div className="w-full h-[560px] flex justify-between items-center mb-40">
-                <NewProductCard
+                <ProductCardImageLeft
                     previewImage={YX1EARPHONES}
                     nameFront="YX1 Wireless"
                     nameBack="Earphones"
@@ -16,6 +15,7 @@ function EarphonesProductListings() {
                     Enjoy incredible high-fidelity sound even in noisy environments with its active noise cancellation feature."
                     lineBreak={true}
                     link="/yx1wirelessearphones"
+                    newProduct={true}
                 />
             </div>
         </>

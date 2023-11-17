@@ -1,5 +1,5 @@
 import FeaturedNewProduct from "../../assets/home/desktop/figma_download_hero_bitmap_copy3.jpg";
-import OrangeProductButton from "../OrangeProductButton";
+import OrangeProductButton from "../product-category-pages/OrangeProductButton";
 
 import { Link } from "wouter";
 

@@ -1,8 +1,8 @@
 import ZX9SPEAKER from "../../assets/product-zx9-speaker/desktop/image-category-page-preview.jpg";
 import ZX7SPEAKER from "../../assets/product-zx7-speaker/desktop/image-category-page-preview.jpg";
 
-import NewProductCard from "../NewProductCard";
-import ProductCardImageRight from "../ProductCardImageRight";
+import ProductCardImageLeft from "../product-category-pages/ProductCardImageLeft";
+import ProductCardImageRight from "../product-category-pages/ProductCardImageRight";
 
 
 function SpeakersProductListings() {
@@ -11,7 +11,7 @@ function SpeakersProductListings() {
         <>
             <div className="w-full h-[1280px] flex flex-col justify-between mb-40">
 
-                <NewProductCard
+                <ProductCardImageLeft
                     previewImage={ZX9SPEAKER}
                     nameFront="ZX9"
                     nameBack="Speaker"
@@ -20,6 +20,7 @@ function SpeakersProductListings() {
                     creating new possibilities for more pleasing and practical audio setups."
                     lineBreak={true}
                     link="/zx9speaker"
+                    newProduct={true}
                 />
 
                 <ProductCardImageRight
@@ -31,6 +32,7 @@ function SpeakersProductListings() {
                     speakers for home or studio use."
                     lineBreak={true}
                     link="/zx7speaker"
+                    newProduct={false}
                 />
                 
             </div>

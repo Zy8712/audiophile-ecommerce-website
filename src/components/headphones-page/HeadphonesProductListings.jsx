@@ -2,9 +2,8 @@ import XX99MARKII from "../../assets/product-xx99-mark-two-headphones/desktop/im
 import XX99MARKI from "../../assets/product-xx99-mark-one-headphones/desktop/image-category-page-preview.jpg";
 import XX59 from "../../assets/product-xx59-headphones/desktop/image-category-page-preview.jpg";
 
-import NewProductCard from "../NewProductCard";
-import ProductCardImageLeft from "../ProductCardImageLeft";
-import ProductCardImageRight from "../ProductCardImageRight";
+import ProductCardImageLeft from "../product-category-pages/ProductCardImageLeft";
+import ProductCardImageRight from "../product-category-pages/ProductCardImageRight";
 
 
 function HeadphonesProductListings() {
@@ -13,7 +12,7 @@ function HeadphonesProductListings() {
         <>
             <div className="w-full h-[2000px] flex flex-col justify-between mb-40">
 
-                <NewProductCard
+                <ProductCardImageLeft
                     previewImage={XX99MARKII}
                     nameFront="XX99 Mark II"
                     nameBack="Headphones"
@@ -21,7 +20,8 @@ function HeadphonesProductListings() {
                     It redefines your premium headphone experience by reproducing the balanced depth 
                     and precision of studio-quality sound."
                     lineBreak={true}
-                    link="./xx99markiiheadphones"
+                    link="/xx99markiiheadphones"
+                    newProduct={true}
                 />
 
                 <ProductCardImageRight
@@ -32,7 +32,8 @@ function HeadphonesProductListings() {
                     detailed and accurate audio reproduction for audiophiles, mixing engineers, and music 
                     aficionados alike in studios and on the go."
                     lineBreak={true}
-                    link="./xx99markiheadphones"
+                    link="/xx99markiheadphones"
+                    newProduct={false}
                 />
 
                 <ProductCardImageLeft
@@ -43,7 +44,8 @@ function HeadphonesProductListings() {
                     the XX59 headphones. The stylish yet durable versatile wireless headset is a brilliant companion 
                     at home or on the move."
                     lineBreak={true}
-                    link="./xx59headphones"
+                    link="/xx59headphones"
+                    newProduct={false}
                 />
             </div>
         </>

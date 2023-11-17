@@ -1,6 +1,5 @@
 import HomeHero from "../components/home-page/HomeHero";
 import HomeProductsDirectories from "../components/home-page/HomeProductsDirectories";
-import SiteFooter from "../components/SiteFooter";
 
 function Home() {
 
@@ -8,7 +7,6 @@ function Home() {
         <>
             <HomeHero />
             <HomeProductsDirectories />
-            <SiteFooter />
         </>
     );
 };

@@ -50,7 +50,7 @@ function HomeProductListings() {
                     <div className="w-[520px] h-full flex flex-col justify-center items-center rounded-lg bg-theme-light-grey">
                         <div className="w-[247px] h-[118px] flex flex-col items-start mr-[61.5px]">
                             <span className="text-black text-[28px] tracking-[2px] font-bold">YX1 EARPHONES</span>
-                            <Link to="/earphones/yx1earphones">
+                            <Link to="/earphones/yx1wirelessearphones">
                                 <button className="w-40 h-12 border-black border-solid border-2 text-black text-[13px] uppercase tracking-[1px] font-bold mt-8 hover:bg-black hover:text-white">
                                     See Product
                                 </button>

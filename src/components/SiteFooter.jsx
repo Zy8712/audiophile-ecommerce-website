@@ -7,7 +7,6 @@ import Instagram_Logo from "../assets/shared/desktop/icon-instagram.svg";
 
 import "../App.css";
 
-
 function SiteFooter() {
 
     return (
@@ -50,7 +49,8 @@ function SiteFooter() {
                         <div className="w-[540px] h-full">
                             <p className="text-white opacity-50 font-medium text-[15px] leading-[25px]">
                                 Audiophile is an all in one stop to fulfill your audio needs.
-                                We're a small team of music lovers and sound specialists who are devoted to helping you get the most out of personal audio.
+                                We're a small team of music lovers and sound specialists who are devoted to 
+                                helping you get the most out of personal audio.
                                 Come and visit our demo facility - we’re open 7 days a week.
                             </p>
                         </div>
@@ -76,7 +76,8 @@ function SiteFooter() {
 
                 <div className="absolute bottom-2 text-white opacity-90 text-xs">
                     Original site design by
-                    <a className="text-theme-light-orange" href="https://www.frontendmentor.io/challenges/audiophile-ecommerce-website-C8cuSd_wx"> Frontend Mentor</a>.
+                    <a className="text-theme-light-orange"
+                        href="https://www.frontendmentor.io/challenges/audiophile-ecommerce-website-C8cuSd_wx"> Frontend Mentor</a>.
                     Coded by: <a className="text-theme-light-orange" href="https://github.com/Zy8712">Bryan Li</a>
                 </div>
             </footer>

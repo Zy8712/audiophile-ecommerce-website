@@ -17,7 +17,7 @@ export default {
         'theme-super-light-grey' : 'rgba(0,0,0,0.1)',
       },
       fontFamily: {
-        'theme-manrope': ['Manrope', 'sans-serif'], 
+        'theme-manrope': ['Manrope', 'sans-serif'],
       },
     },
   },

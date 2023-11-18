@@ -1,5 +1,6 @@
 import HeadphonesTitle from "../components/headphones-page/HeadphonesTitle";
 import HeadphonesProductsDirectories from "../components/headphones-page/HeadphonesProductsDirectories";
+import JumpToTopButton from "./JumpToTopButton";
 
 function Headphones() {
 
@@ -7,6 +8,7 @@ function Headphones() {
         <>
             <HeadphonesTitle />
             <HeadphonesProductsDirectories />
+            <JumpToTopButton />
         </>
     );
 };

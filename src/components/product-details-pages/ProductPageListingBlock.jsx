@@ -36,14 +36,14 @@ function ProductPageListingBlock(props) {
                     <div className="flex mt-[49px]">
                         <div className="w-[120px] h-12 bg-theme-light-grey flex mr-[16.5px]">
                             <button onClick={decrementCounter}
-                                className="w-12 h-12 flex justify-center items-center hover:text-theme-dark-orange">
+                                className="w-12 h-12 flex justify-center items-center hover:text-theme-dark-orange hover:bg-theme-super-light-grey">
                                 -
                             </button>
                             <span className="w-6 h-12 flex justify-center items-center">
                                 {productCount}
                             </span>
                             <button onClick={incrementCounter}
-                                className="w-12 h-12 flex justify-center items-center hover:text-theme-dark-orange">
+                                className="w-12 h-12 flex justify-center items-center hover:text-theme-dark-orange hover:bg-theme-super-light-grey">
                                 +
                             </button>
                         </div>

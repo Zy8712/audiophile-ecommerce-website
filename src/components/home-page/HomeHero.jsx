@@ -24,7 +24,7 @@ function HomeHero() {
                         </Link>
                     </div>
                     <div className="">
-                        <img src={FeaturedNewProduct} className=" rounded-full border-none opacity-70 bg-blend-hard-light -z-10" />
+                        <img src={FeaturedNewProduct} className="rounded-full border-none opacity-70 bg-blend-hard-light -z-10" />
                     </div>
                 </div>
             </div>

@@ -1,11 +1,13 @@
-import React, { useState } from 'react';
-import { Link, Route, useLocation } from 'wouter';
+import { Link, useLocation } from 'wouter';
 
 import Audiophile_Logo from "../assets/shared/desktop/logo.svg";
 import Cart_Icon from "../assets/shared/desktop/icon-cart.svg";
 
+
 function Navbar() {
     const [location] = useLocation();
+
+    const isActive = (route) => location === route;
 
     return (
         <>
@@ -17,34 +19,35 @@ function Navbar() {
 
                     <div className="w-[429px] flex justify-between items-center">
                         <Link to="/">
-                            <span className="text-white text-[13px] uppercase font-bold tracking-[2px] leading-[25px] hover:text-theme-dark-orange hover:cursor-pointer">
+                            <span className={`text-[13px] uppercase font-bold tracking-[2px] leading-[25px] hover:cursor-pointer 
+                                ${isActive('/') ? 'text-theme-dark-orange' : 'text-white hover:text-theme-dark-orange'}`}>
                                 Home
                             </span>
                         </Link>
                         <Link to="/headphones">
-                            <span className="text-white text-[13px] uppercase font-bold tracking-[2px] leading-[25px] hover:text-theme-dark-orange hover:cursor-pointer">
+                            <span className={`text-[13px] uppercase font-bold tracking-[2px] leading-[25px] hover:cursor-pointer 
+                                ${isActive('/headphones') ? 'text-theme-dark-orange' : 'text-white hover:text-theme-dark-orange'}`}>
                                 Headphones
                             </span>
                         </Link>
                         <Link to="/speakers">
-                            <span className="text-white text-[13px] uppercase font-bold tracking-[2px] leading-[25px] hover:text-theme-dark-orange hover:cursor-pointer">
+                            <span className={`text-[13px] uppercase font-bold tracking-[2px] leading-[25px] hover:cursor-pointer
+                                ${isActive('/speakers') ? 'text-theme-dark-orange' : 'text-white hover:text-theme-dark-orange'}`}>
                                 Speakers
                             </span>
                         </Link>
                         <Link to="/earphones">
-                            <span className="text-white text-[13px] uppercase font-bold tracking-[2px] leading-[25px] hover:text-theme-dark-orange hover:cursor-pointer">
+                            <span className={`text-[13px] uppercase font-bold tracking-[2px] leading-[25px] hover:cursor-pointer 
+                                ${isActive('/earphones') ? 'text-theme-dark-orange' : 'text-white hover:text-theme-dark-orange'}`}>
                                 Earphones
                             </span>
                         </Link>
                     </div>
 
-                    <div>
+                    <div className="relative">
                         <button>
                             <img src={Cart_Icon} />
                         </button>
-                    </div>
-
-                    <div className="w-full h-[1px] absolute bottom-0 bg-white opacity-20">
 
                     </div>
 

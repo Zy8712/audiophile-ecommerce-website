@@ -19,7 +19,7 @@ function ProductPageListingBlock(props) {
     return (
         <>
             <div className="max-w-full h-[560px] flex justify-between items-center">
-                <img src={props.productPreviewImage} alt="" className="h-full" />
+                <img src={props.productPreviewImage} alt="" className="h-full rounded-lg" />
                 <div className="w-[445.5px] h-[372px] relative">
                     <span className={`absolute -top-[37px] text-sm tracking-[10px] text-theme-dark-orange font-normal uppercase ${props.newProduct ? 'block' : 'hidden'}`}>
                         New Product

@@ -7,7 +7,7 @@ function XX59HeadphonesProductBlock() {
         <>
             <ProductPageListingBlock
                 productPreviewImage={Product_Preview}
-                newProduct={true}
+                newProduct={false}
                 productNameFront="XX59"
                 productNameBack="Headphones"
                 productDescription="Enjoy your audio almost anywhere and customize it to your specific 

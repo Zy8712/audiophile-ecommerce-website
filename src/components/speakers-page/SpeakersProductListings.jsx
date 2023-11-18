@@ -9,7 +9,7 @@ function SpeakersProductListings() {
 
     return (
         <>
-            <div className="w-full h-[1280px] flex flex-col justify-between mb-40">
+            <div className="w-full h-[1280px] flex flex-col justify-between">
 
                 <ProductCardImageLeft
                     previewImage={ZX9SPEAKER}
@@ -19,7 +19,7 @@ function SpeakersProductListings() {
                     It’s a bookshelf speaker system that offers truly wireless connectivity -- 
                     creating new possibilities for more pleasing and practical audio setups."
                     lineBreak={true}
-                    link="/zx9speaker"
+                    link="/speakers/zx9speaker"
                     newProduct={true}
                 />
 
@@ -31,7 +31,7 @@ function SpeakersProductListings() {
                     speaker uses high-end audiophile components that represents the top of the line powered 
                     speakers for home or studio use."
                     lineBreak={true}
-                    link="/zx7speaker"
+                    link="/speakers/zx7speaker"
                     newProduct={false}
                 />
                 

@@ -1,12 +1,12 @@
-import XX59HeadphonesProductListing from "../../components/headphones-product-page/XX59HeadphonesProductListing";
+import XX59HeadphonesProduct from "../../components/headphones-product-page/XX59HeadphonesProduct";
 
 function XX59Headphones(){
 
     return(
         <>
-            <div className="w-full flex justify-center pt-24 pb-40">
-                <div className="w-[1110px] h-[3794px] flex flex-col pt-20">
-                    <XX59HeadphonesProductListing />
+            <div className="w-full flex justify-center pt-[176px] pb-40">
+                <div className="w-[1110px] h-[3794px] flex flex-col">
+                    <XX59HeadphonesProduct />
                 </div>
             </div>
         </>

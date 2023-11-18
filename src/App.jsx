@@ -17,6 +17,9 @@ import ZX7Speaker from "./pages/speakers-product-details-pages/ZX7Speaker";
 import YX1WirelessEarphones from "./pages/earphones-product-details-pages/YX1WirelessEarphones";
 import SiteFooter from "./components/SiteFooter";
 
+import ScrollToTop from "./pages/ScrollToTop";
+
+/*
 const Scope = (props) => {
   const router = useRouter();
   const [parentLocation] = useLocation();
@@ -32,7 +35,7 @@ const Scope = (props) => {
       {props.children}
     </Router>
   );
-};
+};*/
 
 function App() {
 
@@ -41,8 +44,20 @@ function App() {
       <Router>
 
         <Navbar />
+        <ScrollToTop />
         <Route path="/" component={Home} />
-        
+        <Route path="/headphones" component={Headphones} />
+        <Route path="/speakers" component={Speakers} />
+        <Route path="/earphones" component={Earphones} />
+        <Route path="/headphones/xx99markiiheadphones" component={XX99MarkIIHeadphones} />
+        <Route path="/headphones/xx99markiheadphones" component={XX99MarkIHeadphones} />
+        <Route path="/headphones/xx59headphones" component={XX59Headphones} />
+        <Route path="/speakers/zx9speaker" component={ZX9Speaker} />
+        <Route path="/speakers/zx7speaker" component={ZX7Speaker} />
+        <Route path="/earphones/yx1wirelessearphones" component={YX1WirelessEarphones} />
+
+        {/*
+
         <Scope base="/headphones">
           <Route path="/xx99markiiheadphones" component={XX99MarkIIHeadphones} />
           <Route path="/xx99markiheadphones" component={XX99MarkIHeadphones} />
@@ -61,7 +76,9 @@ function App() {
           <Route path="/" component={Earphones} />
         </Scope>
 
-        <SiteFooter/>
+        */}
+
+        <SiteFooter />
 
       </Router>
 

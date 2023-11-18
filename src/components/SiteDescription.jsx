@@ -4,7 +4,7 @@ function SiteDescription() {
 
     return (
         <>
-            <div className="w-full h-[588px] flex justify-between items-center mt-40">
+            <div className="w-full h-[588px] flex justify-between items-center">
                 <div className="w-[445px] h-[295px] flex flex-col">
                     <p className="text-black text-[40px] leading-[44px] tracking-[1.43px] uppercase font-bold">
                         Bringing you the <span className="text-theme-dark-orange">best </span> audio gear

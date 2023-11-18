@@ -19,7 +19,7 @@ function HomeHero() {
                         <p className="w-[349px] text-white opacity-75 font-medium text-[15px] leading-[25px] mb-[30px]">
                             Experience natural, lifelike audio and exceptional build quality made for the passionate music enthusiast.
                         </p>
-                        <Link to="./headphones/xx99markiiheadphones">
+                        <Link to="/headphones/xx99markiiheadphones">
                             <OrangeProductButton />
                         </Link>
                     </div>

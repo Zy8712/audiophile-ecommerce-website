@@ -1,5 +1,5 @@
 
-function YX1WirelessEarphonesProductFeatures() {
+function ZX9SpeakerProductFeatures() {
 
     return (
         <>
@@ -8,18 +8,17 @@ function YX1WirelessEarphonesProductFeatures() {
                     <h2 className="font-bold text-[32px] leading-9 tracking-[1.14px] uppercase text-black mb-8">Features</h2>
                     <div className="w-full h-[250px] font-medium text-[15px] leading-[25px] text-black opacity-50 flex flex-col justify-between">
                         <p>
-                            Experience unrivalled stereo sound thanks to innovative acoustic technology.
-                            With improved ergonomics designed for full day wearing, these revolutionary
-                            earphones have been finely crafted to provide you with the perfect fit, delivering
-                            complete comfort all day long while enjoying exceptional noise isolation and truly
-                            immersive sound.
+                            Connect via Bluetooth or nearly any wired source. This speaker features optical,
+                            digital coaxial, USB Type-B, stereo RCA, and stereo XLR inputs, allowing you to
+                            have up to five wired source devices connected for easy switching. Improved bluetooth
+                            technology offers near lossless audio quality at up to 328ft (100m).
                         </p>
                         <p>
-                            The YX1 Wireless Earphones features customizable controls for volume, music, calls,
-                            and voice assistants built into both earbuds. The new 7-hour battery life can be extended
-                            up to 28 hours with the charging case, giving you uninterrupted play time. Exquisite
-                            craftsmanship with a splash resistant design now available in an all new white and grey
-                            color scheme as well as the popular classic black.
+                            Discover clear, more natural sounding highs than the competition with ZX9’s 
+                            signature planar diaphragm tweeter. Equally important is its powerful room-shaking 
+                            bass courtesy of a 6.5” aluminum alloy bass unit. You’ll be able to enjoy equal sound 
+                            quality whether in a large room or small den. Furthermore, you will experience new 
+                            sensations from old songs since it can respond to even the subtle waveforms.
                         </p>
                     </div>
                 </div>
@@ -29,11 +28,11 @@ function YX1WirelessEarphonesProductFeatures() {
                     <div className="flex flex-col justify-between w-full h-[157px]">
                         <div>
                             <span className="font-bold text-[15px] text-theme-dark-orange leading-[25px] mr-[21px]">2x</span>
-                            <span className="font-medium text-[15px] text-black leading-[25px] opacity-50">Earphone Unit</span>
+                            <span className="font-medium text-[15px] text-black leading-[25px] opacity-50">Speaker Unit</span>
                         </div>
                         <div>
-                            <span className="font-bold text-[15px] text-theme-dark-orange leading-[25px] mr-[21px]">6x</span>
-                            <span className="font-medium text-[15px] text-black leading-[25px] opacity-50">Multi-sized Earplugs</span>
+                            <span className="font-bold text-[15px] text-theme-dark-orange leading-[25px] mr-[21px]">2x</span>
+                            <span className="font-medium text-[15px] text-black leading-[25px] opacity-50">Speaker Cloth Panel</span>
                         </div>
                         <div>
                             <span className="font-bold text-[15px] text-theme-dark-orange leading-[25px] mr-[21px]">1x</span>
@@ -41,11 +40,11 @@ function YX1WirelessEarphonesProductFeatures() {
                         </div>
                         <div>
                             <span className="font-bold text-[15px] text-theme-dark-orange leading-[25px] mr-[21px]">1x</span>
-                            <span className="font-medium text-[15px] text-black leading-[25px] opacity-50">USB-C Charging Cable</span>
+                            <span className="font-medium text-[15px] text-black leading-[25px] opacity-50">3.5mm 10m Audio Cable</span>
                         </div>
                         <div>
                             <span className="font-bold text-[15px] text-theme-dark-orange leading-[25px] mr-[21px]">1x</span>
-                            <span className="font-medium text-[15px] text-black leading-[25px] opacity-50">Travel Pouch</span>
+                            <span className="font-medium text-[15px] text-black leading-[25px] opacity-50">10m Optical Cable</span>
                         </div>
                     </div>
                 </div>
@@ -55,4 +54,4 @@ function YX1WirelessEarphonesProductFeatures() {
     );
 };
 
-export default YX1WirelessEarphonesProductFeatures;
+export default ZX9SpeakerProductFeatures;

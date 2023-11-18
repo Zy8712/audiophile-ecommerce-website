@@ -7,7 +7,7 @@ function ProductCardImageLeft(props) {
     return (
         <>
             <div className="w-full h-[560px] flex justify-between items-center">
-                <img src={`${props.previewImage}`} className="h-full" />
+                <img src={`${props.previewImage}`} className="h-full rounded-lg" />
                 <div className={`w-[445px] ${props.newProduct ? 'h-[343px]' : 'h-[308px]'} flex flex-col`}>
                     <span className={`${props.newProduct ? 'block' : 'hidden'} text-theme-dark-orange text-sm tracking-[10px] uppercase mb-4`}>
                         New Product

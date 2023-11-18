@@ -21,7 +21,7 @@ function ProductCardImageRight(props) {
                         <OrangeProductButton />
                     </Link>
                 </div>
-                <img src={`${props.previewImage}`} className="h-full" />
+                <img src={`${props.previewImage}`} className="h-full rounded-lg" />
             </div>
         </>
     );

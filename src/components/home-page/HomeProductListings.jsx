@@ -7,7 +7,7 @@ function HomeProductListings() {
 
     return (
         <>
-            <div className="w-full h-[1296px] flex flex-col justify-between mt-[196px] mb-10">
+            <div className="w-full h-[1296px] flex flex-col justify-between mb-10">
 
                 <div className="w-full h-[560px] flex bg-theme-dark-orange bg-[url('./assets/home/desktop/pattern-circles.svg')] bg-no-repeat bg-[left_-140px_top_-40px] rounded-lg">
                     <div className="w-1/2 h-full overflow-hidden relative">

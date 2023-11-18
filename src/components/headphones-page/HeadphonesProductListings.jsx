@@ -10,7 +10,7 @@ function HeadphonesProductListings() {
 
     return (
         <>
-            <div className="w-full h-[2000px] flex flex-col justify-between mb-40">
+            <div className="w-full h-[2000px] flex flex-col justify-between">
 
                 <ProductCardImageLeft
                     previewImage={XX99MARKII}
@@ -20,7 +20,7 @@ function HeadphonesProductListings() {
                     It redefines your premium headphone experience by reproducing the balanced depth 
                     and precision of studio-quality sound."
                     lineBreak={true}
-                    link="/xx99markiiheadphones"
+                    link="/headphones/xx99markiiheadphones"
                     newProduct={true}
                 />
 
@@ -32,7 +32,7 @@ function HeadphonesProductListings() {
                     detailed and accurate audio reproduction for audiophiles, mixing engineers, and music 
                     aficionados alike in studios and on the go."
                     lineBreak={true}
-                    link="/xx99markiheadphones"
+                    link="/headphones/xx99markiheadphones"
                     newProduct={false}
                 />
 
@@ -44,7 +44,7 @@ function HeadphonesProductListings() {
                     the XX59 headphones. The stylish yet durable versatile wireless headset is a brilliant companion 
                     at home or on the move."
                     lineBreak={true}
-                    link="/xx59headphones"
+                    link="/headphones/xx59headphones"
                     newProduct={false}
                 />
             </div>

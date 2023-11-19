@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Route, Router, useRouter, useLocation } from "wouter";
 
 import './App.css';
@@ -18,6 +18,7 @@ import YX1WirelessEarphones from "./pages/earphones-product-details-pages/YX1Wir
 import SiteFooter from "./components/SiteFooter";
 
 import ScrollToTop from "./pages/ScrollToTop";
+import Cart from "./components/Cart";
 
 /*
 const Scope = (props) => {
@@ -39,11 +40,17 @@ const Scope = (props) => {
 
 function App() {
 
+  const[showCart, setShowCart] = useState(false);
+
+  const toggleCart = () =>{
+    setShowCart(!showCart);
+  }
+
   return (
     <>
       <Router>
 
-        <Navbar />
+        <Navbar toggleCart={toggleCart} showCart={showCart} />
         <ScrollToTop />
         <Route path="/" component={Home} />
         <Route path="/headphones" component={Headphones} />
@@ -55,6 +62,7 @@ function App() {
         <Route path="/speakers/zx9speaker" component={ZX9Speaker} />
         <Route path="/speakers/zx7speaker" component={ZX7Speaker} />
         <Route path="/earphones/yx1wirelessearphones" component={YX1WirelessEarphones} />
+        <Cart toggleCart={toggleCart} showCart={showCart} />
 
         {/*
 

@@ -1,6 +1,6 @@
 .scroll-to-top-btn {
     position: fixed;
-    z-index: 9999;
+    z-index: 35;
     bottom: 15px;
     right: 15px;
     background-image: linear-gradient(#D87D4A, white);

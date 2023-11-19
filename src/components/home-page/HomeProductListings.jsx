@@ -31,7 +31,7 @@ function HomeProductListings() {
                     </div>
                 </div>
 
-                <div className="w-full h-80 flex flex-col justify-center rounded-lg bg-[url('./assets/home/desktop/image-speaker-zx7.jpg')]">
+                <div className="max-w-full h-80 flex flex-col justify-center rounded-lg bg-[url('./assets/home/desktop/image-speaker-zx7.jpg')]">
                     <div className="w-[204px] h-[118px] flex flex-col items-start ml-[95px]">
                         <span className="text-black text-[28px] tracking-[2px] font-bold">ZX7 SPEAKER</span>
                         <Link to="/speakers/zx7speaker">

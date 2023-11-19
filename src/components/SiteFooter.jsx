@@ -1,4 +1,4 @@
-import { Link } from 'wouter';
+import { Link, useLocation } from 'wouter';
 
 import Audiophile_Logo from "../assets/shared/desktop/logo.svg";
 import Facebook_Logo from "../assets/shared/desktop/icon-facebook.svg";
@@ -8,6 +8,10 @@ import Instagram_Logo from "../assets/shared/desktop/icon-instagram.svg";
 import "../App.css";
 
 function SiteFooter() {
+
+    const [location] = useLocation();
+
+    const isActive = (route) => location === route;
 
     return (
         <>
@@ -23,22 +27,26 @@ function SiteFooter() {
 
                         <div className="w-[429px] flex justify-between items-center">
                             <Link to="/">
-                                <span className="text-white text-[13px] tracking-[2px] leading-[25px] uppercase font-bold hover:text-theme-dark-orange hover:cursor-pointer">
+                                <span className={`text-[13px] tracking-[2px] leading-[25px] uppercase font-bold hover:cursor-pointer
+                                    ${isActive('/') ? 'text-theme-dark-orange' : 'text-white hover:text-theme-dark-orange'}`}>
                                     Home
                                 </span>
                             </Link>
                             <Link to="/headphones">
-                                <span className="text-white text-[13px] tracking-[2px] leading-[25px] uppercase font-bold hover:text-theme-dark-orange hover:cursor-pointer">
+                                <span className={`text-[13px] tracking-[2px] leading-[25px] uppercase font-bold hover:cursor-pointer
+                                    ${isActive('/headphones') ? 'text-theme-dark-orange' : 'text-white hover:text-theme-dark-orange'}`}>
                                     Headphones
                                 </span>
                             </Link>
                             <Link to="/speakers">
-                                <span className="text-white text-[13px] tracking-[2px] leading-[25px] uppercase font-bold hover:text-theme-dark-orange hover:cursor-pointer">
+                                <span className={`text-[13px] tracking-[2px] leading-[25px] uppercase font-bold hover:cursor-pointer
+                                    ${isActive('/speakers') ? 'text-theme-dark-orange' : 'text-white hover:text-theme-dark-orange'}`}>
                                     Speakers
                                 </span>
                             </Link>
                             <Link to="/earphones">
-                                <span className="text-white text-[13px] tracking-[2px] leading-[25px] uppercase font-bold hover:text-theme-dark-orange hover:cursor-pointer">
+                                <span className={`text-[13px] tracking-[2px] leading-[25px] uppercase font-bold hover:cursor-pointer
+                                    ${isActive('/earphones') ? 'text-theme-dark-orange' : 'text-white hover:text-theme-dark-orange'}`}>
                                     Earphones
                                 </span>
                             </Link>
@@ -49,7 +57,7 @@ function SiteFooter() {
                         <div className="w-[540px] h-full">
                             <p className="text-white opacity-50 font-medium text-[15px] leading-[25px]">
                                 Audiophile is an all in one stop to fulfill your audio needs.
-                                We're a small team of music lovers and sound specialists who are devoted to 
+                                We're a small team of music lovers and sound specialists who are devoted to
                                 helping you get the most out of personal audio.
                                 Come and visit our demo facility - we’re open 7 days a week.
                             </p>

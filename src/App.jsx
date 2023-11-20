@@ -8,6 +8,7 @@ import Home from "./pages/Home";
 import Headphones from "./pages/Headphones";
 import Speakers from "./pages/Speakers";
 import Earphones from "./pages/Earphones";
+import Checkout from "./pages/Checkout";
 
 import XX99MarkIIHeadphones from "./pages/headphones-product-details-pages/XX99MarkIIHeadphones";
 import XX99MarkIHeadphones from "./pages/headphones-product-details-pages/XX99MarkIHeadphones";
@@ -56,6 +57,7 @@ function App() {
         <Route path="/headphones" component={Headphones} />
         <Route path="/speakers" component={Speakers} />
         <Route path="/earphones" component={Earphones} />
+        <Route path="/checkout" component={Checkout} />
         <Route path="/headphones/xx99markiiheadphones" component={XX99MarkIIHeadphones} />
         <Route path="/headphones/xx99markiheadphones" component={XX99MarkIHeadphones} />
         <Route path="/headphones/xx59headphones" component={XX59Headphones} />

@@ -1,3 +1,4 @@
+import { Link } from 'wouter';
 
 function Cart({ toggleCart, showCart }) {
 
@@ -27,9 +28,11 @@ function Cart({ toggleCart, showCart }) {
                         </span>
                     </div>
 
-                    <button className="w-full h-12 bg-theme-dark-orange rounded-sm text-white uppercase font-bold tracking-[1px] text-[13px]">
-                        Checkout
-                    </button>
+                    <Link to="/checkout">
+                        <button className="w-full h-12 bg-theme-dark-orange rounded-sm text-white uppercase font-bold tracking-[1px] text-[13px]">
+                            Checkout
+                        </button>
+                    </Link>
 
                 </div>
             </div>

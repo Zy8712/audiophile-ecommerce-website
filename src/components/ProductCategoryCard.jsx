@@ -9,8 +9,8 @@ function ProductCategoryCard(props) {
     return (
         <>
             <Link to={props.categoryLink}>
-                <div className="w-[350px] h-full flex flex-col justify-end">
-                    <div className="w-full h-[204px] flex flex-col justify-end items-center bg-theme-light-grey rounded-lg relative group hover:cursor-pointer">
+                <div className="w-[327px] md:w-[235px] custom-md:w-[260px] lg:w-[300px] custom-lg:w-[350px] h-[217px] md:h-full flex flex-col justify-end transition-all duration-500 ease-in-out">
+                    <div className="w-full h-[165px] md:h-[204px] flex flex-col justify-end items-center bg-theme-light-grey rounded-lg relative group hover:cursor-pointer">
 
                         <img src={props.categoryImage} className={props.categoryImageCSS} />
 

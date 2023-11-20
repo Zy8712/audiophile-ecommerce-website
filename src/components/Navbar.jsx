@@ -4,6 +4,8 @@ import Audiophile_Logo from "../assets/shared/desktop/logo.svg";
 import Cart_Icon from "../assets/shared/desktop/icon-cart.svg";
 import Menu_Icon from "../assets/shared/tablet/icon-hamburger.svg";
 
+import "../App.css";
+
 function Navbar({ toggleCart, showCart }) {
 
     const [location] = useLocation();
@@ -53,7 +55,7 @@ function Navbar({ toggleCart, showCart }) {
 
                     <div className="relative">
                         <button onClick={toggleCart}>
-                            <img src={Cart_Icon} />
+                            <img src={Cart_Icon} className={`${showCart ? 'custom-dark-orange-filter-selected' : 'custom-dark-orange-filter'}`} />
                         </button>
 
                         <div className="bg-theme-dark-orange absolute z-[60px] -top-2 -right-3 rounded-full w-4 h-4 text-[8px] text-center flex flex-col justify-center items-center text-white font-bold">

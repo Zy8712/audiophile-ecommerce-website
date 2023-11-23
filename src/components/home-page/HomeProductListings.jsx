@@ -1,5 +1,6 @@
-import EarphonesHomeProductListing from "../../assets/home/desktop/image-earphones-yx1.jpg";
-import SpeakerZX9 from "../../assets/home/desktop/image-speaker-zx9.png";
+import EarphonesHomeProductListingDesktop from "../../assets/home/desktop/image-earphones-yx1.jpg";
+import EarphonesHomeProductListingTablet from "../../assets/home/tablet/image-earphones-yx1.jpg";
+import SpeakerZX9Desktop from "../../assets/home/desktop/image-speaker-zx9.png";
 
 import { Link } from "wouter";
 
@@ -7,15 +8,14 @@ function HomeProductListings() {
 
     return (
         <>
-            <div className="w-full h-[1296px] flex flex-col justify-between mb-10">
+            <div className="w-full h-[1423px] md:h-[1296px] flex flex-col justify-between mb-10">
 
-                <div className="w-full h-[560px] flex bg-theme-dark-orange bg-[url('./assets/home/desktop/pattern-circles.svg')] bg-no-repeat bg-[left_-140px_top_-40px] rounded-lg">
-                    <div className="w-1/2 h-full overflow-hidden relative">
-                        <img src={SpeakerZX9} className="w-96 absolute -bottom-4 right-6" />
+                <div className="w-full h-[720px] md:h-[560px] flex flex-col md:flex-row bg-theme-dark-orange bg-[url('./assets/home/desktop/pattern-circles.svg')] bg-no-repeat bg-[left_50%_top_120%] md:bg-[left_-140px_top_-40px] rounded-lg">
+                    <div className="w-full md:w-1/2 h-2/5 md:h-full overflow-hidden relative flex justify-center items-center md:inline-block">
+                        <img src={SpeakerZX9Desktop} className="w-44 md:w-96 absolute md:-bottom-4 md:right-6 mt-4" />
                     </div>
-
-                    <div className="w-1/2 h-full flex flex-col justify-center items-center">
-                        <div className="w-[349px] h-[303px] flex flex-col">
+                    <div className="w-full md:w-1/2 h-3/5 md:h-full flex flex-col justify-center items-center text-center md:text-left">
+                        <div className="w-[349px] h-[303px] flex flex-col items-center md:items-start">
                             <span className="block h-[116px] text-white text-[56px] tracking-[2px] leading-[58px] font-bold">
                                 ZX9 SPEAKER
                             </span>
@@ -31,7 +31,7 @@ function HomeProductListings() {
                     </div>
                 </div>
 
-                <div className="max-w-full h-80 flex flex-col justify-center rounded-lg bg-[url('./assets/home/desktop/image-speaker-zx7.jpg')]">
+                <div className="max-w-full h-80 flex flex-col justify-center rounded-lg bg-[url('./assets/home/tablet/image-speaker-zx7.jpg')] md:bg-[url('./assets/home/desktop/image-speaker-zx7.jpg')]">
                     <div className="w-[204px] h-[118px] flex flex-col items-start ml-[95px]">
                         <span className="text-black text-[28px] tracking-[2px] font-bold">ZX7 SPEAKER</span>
                         <Link to="/speakers/zx7speaker">
@@ -43,11 +43,11 @@ function HomeProductListings() {
                 </div>
 
                 <div className="w-full h-80 flex justify-between">
-                    <div className="w-[540px] h-full rounded-lg overflow-hidden">
-                        <img src={EarphonesHomeProductListing} />
+                    <div className="w-[339px] lg:w-[540px] h-full rounded-lg overflow-hidden">
+                        <img src={EarphonesHomeProductListingDesktop} className="hidden lg:inline-block" />
+                        <img src={EarphonesHomeProductListingTablet} className="inline-block lg:hidden" />
                     </div>
-
-                    <div className="w-[520px] h-full flex flex-col justify-center items-center rounded-lg bg-theme-light-grey">
+                    <div className="w-[339px] lg:w-[520px] h-full flex flex-col justify-center items-center rounded-lg bg-theme-light-grey">
                         <div className="w-[247px] h-[118px] flex flex-col items-start mr-[61.5px]">
                             <span className="text-black text-[28px] tracking-[2px] font-bold">YX1 EARPHONES</span>
                             <Link to="/earphones/yx1wirelessearphones">

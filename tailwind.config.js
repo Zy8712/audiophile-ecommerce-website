@@ -22,6 +22,7 @@ export default {
       },
       screens: {
         'custom-lg' : '1140px',
+        'custom-md' : '900px',
         'custom-sm' : '480px',
       },
     },

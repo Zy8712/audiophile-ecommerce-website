@@ -1,4 +1,4 @@
-import FeaturedNewProduct from "../../assets/home/desktop/figma_download_hero_bitmap_copy3.jpg";
+import FeaturedNewProduct from "../../assets/home/desktop/figma_download_hero_bitmap_copy3_edit1_ai-upscale400.jpg";
 import OrangeProductButton from "../product-category-pages/OrangeProductButton";
 
 import { Link } from "wouter";
@@ -26,7 +26,7 @@ function HomeHero() {
                     </div>
 
                     <div className="block custom-lg:inline-block">
-                        <img src={FeaturedNewProduct} className="rounded-full border-none opacity-70 bg-blend-hard-light -z-10" />
+                        <img src={FeaturedNewProduct} className="max-h-[525px] rounded-full border-none opacity-70 bg-blend-hard-light -z-10" />
                     </div>
                 </div>
             </div>

@@ -7,7 +7,7 @@ function SiteDescription() {
     return (
         <>
             <div className="w-full h-[798px] sm:h-[600px] md:h-[660px] custom-md:h-[588px] flex flex-col-reverse custom-md:flex-row justify-between items-center transition-all duration-500 ease-in-out">
-                <div className="w-full sm:w-[573px] custom-md:w-[445px] h-[295px] sm:h-[270px] md:h-[300px] custom-md:h-[295px] flex flex-col text-center custom-md:text-left transition-all duration-500 ease-in-out">
+                <div className="w-full sm:w-[573px] custom-md:w-[445px] h-[358px] custom-sm:h-[295px] sm:h-[270px] md:h-[300px] custom-md:h-[295px] flex flex-col text-center custom-md:text-left transition-all duration-500 ease-in-out">
                     <p className="text-black text-[28px] sm:text-[40px] leading-[44px] tracking-[1.43px] uppercase font-bold transition-all duration-500 ease-in-out">
                         Bringing you the <span className="text-theme-dark-orange">best </span> audio gear
                     </p>

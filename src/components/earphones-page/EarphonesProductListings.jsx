@@ -1,4 +1,6 @@
 import YX1EARPHONES from "../../assets/product-yx1-earphones/desktop/image-category-page-preview.jpg";
+import YX1EARPHONES_Tablet from "../../assets/product-yx1-earphones/tablet/image-category-page-preview.jpg";
+import YX1EARPHONES_Mobile from "../../assets/product-yx1-earphones/mobile/image-category-page-preview.jpg";
 
 import ProductCardImageLeft from "../product-category-pages/ProductCardImageLeft";
 
@@ -8,7 +10,9 @@ function EarphonesProductListings() {
         <>
             <div className="w-full h-[560px] flex justify-between items-center">
                 <ProductCardImageLeft
-                    previewImage={YX1EARPHONES}
+                    previewImageDesktop={YX1EARPHONES}
+                    previewImageTablet={YX1EARPHONES_Tablet}
+                    previewImageMobile={YX1EARPHONES_Mobile}
                     nameFront="YX1 Wireless"
                     nameBack="Earphones"
                     description="Tailor your listening experience with bespoke dynamic drivers from the new YX1 Wireless Earphones. 

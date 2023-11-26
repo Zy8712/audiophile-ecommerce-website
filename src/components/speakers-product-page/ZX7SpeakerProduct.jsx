@@ -13,7 +13,7 @@ function ZX7SpeakerProduct() {
         <>
             <div className="w-full">
                 <GoBackButton />
-                <div className="w-full h-[5251px] sm:h-[3456px] lg:h-[3713px] flex flex-col justify-between">
+                <div className="w-full h-[5251px] sm:h-[3456px] lg:h-[3713px] flex flex-col justify-between items-center">
                     <ZX7SpeakerProductBlock />
                     <ZX7SpeakerProductFeatures />
                     <ZX7SpeakerProductGallery />

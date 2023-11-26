@@ -1,5 +1,5 @@
 import ProductPageListingBlock from "../product-details-pages/ProductPageListingBlock";
-import Product_Preview from "../../assets/product-xx59-headphones/desktop/image-product.jpg";
+import Product_Preview_Desktop from "../../assets/product-xx59-headphones/desktop/image-product.jpg";
 import Product_Preview_Tablet from "../../assets/product-xx59-headphones/tablet/image-product.jpg";
 import Product_Preview_Mobile from "../../assets/product-xx59-headphones/mobile/image-product.jpg";
 
@@ -8,7 +8,7 @@ function XX59HeadphonesProductBlock() {
     return (
         <>
             <ProductPageListingBlock
-                productPreviewImageDesktop={Product_Preview}
+                productPreviewImageDesktop={Product_Preview_Desktop}
                 productPreviewImageTablet={Product_Preview_Tablet}
                 productPreviewImageMobile={Product_Preview_Mobile}
                 newProduct={false}

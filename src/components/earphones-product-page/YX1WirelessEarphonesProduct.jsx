@@ -16,7 +16,7 @@ function YX1WirelessEarphonesProduct() {
                         Go Back
                     </span>
                 </div>
-                <div className="w-full h-[5251px] sm:h-[3456px] lg:h-[3713px] flex flex-col justify-between">
+                <div className="w-full h-[5251px] sm:h-[3456px] lg:h-[3713px] flex flex-col justify-between items-center">
                     <YX1WirelessEarphonesProductBlock />
                     <YX1WirelessEarphonesProductFeatures />
                     <YX1WirelessEarphonesProductGallery />

@@ -16,7 +16,7 @@ function XX99MarkIIHeadphonesProduct() {
                         Go Back
                     </span>
                 </div>
-                <div className="w-full h-[5251px] sm:h-[3456px] lg:h-[3713px] flex flex-col justify-between">
+                <div className="w-full h-[5251px] sm:h-[3456px] lg:h-[3713px] flex flex-col justify-between items-center">
                     <XX99MarkIIHeadphonesProductBlock />
                     <XX99MarkIIHeadphonesProductFeatures />
                     <XX99MarkIIHeadphonesProductGallery />

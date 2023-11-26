@@ -1,4 +1,6 @@
-import Product_Recommend_Preview from "../../assets/product-zx9-speaker/desktop/image-category-page-preview.jpg";
+import Product_Recommend_Preview_Desktop from "../../assets/shared/desktop/image-zx9-speaker.jpg";
+import Product_Recommend_Preview_Tablet from "../../assets/shared/tablet/image-zx9-speaker.jpg";
+import Product_Recommend_Preview_Mobile from "../../assets/shared/mobile/image-zx9-speaker.jpg";
 import UltimateProductRecommendationCard from "./UltimateProductRecommendationCard";
 
 function ZX9SpeakerRecommendation() {
@@ -6,7 +8,9 @@ function ZX9SpeakerRecommendation() {
     return (
         <>
             <UltimateProductRecommendationCard
-                previewImage={Product_Recommend_Preview}
+                previewImageDesktop={Product_Recommend_Preview_Desktop}
+                previewImageTablet={Product_Recommend_Preview_Tablet}
+                previewImageMobile={Product_Recommend_Preview_Mobile}
                 productName="ZX9 Speaker"
                 pageLink="/speakers/zx9speaker"
             />

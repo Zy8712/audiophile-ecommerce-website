@@ -15,7 +15,7 @@ function SpeakersProductListings() {
 
     return (
         <>
-            <div className="w-full h-[1280px] flex flex-col justify-between">
+            <div className="w-full h-[1525px] sm:h-[1497px] lg:h-[1280px] flex flex-col justify-between">
 
                 <ProductCardImageLeft
                     previewImageDesktop={ZX9SPEAKER}

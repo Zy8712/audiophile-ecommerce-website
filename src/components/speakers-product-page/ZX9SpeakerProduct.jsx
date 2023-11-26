@@ -16,7 +16,7 @@ function ZX9SpeakerProduct() {
                         Go Back
                     </span>
                 </div>
-                <div className="w-full h-[3713px] flex flex-col justify-between">
+                <div className="w-full h-[5251px] sm:h-[3456px] lg:h-[3713px] flex flex-col justify-between">
                     <ZX9SpeakerProductBlock />
                     <ZX9SpeakerProductFeatures />
                     <ZX9SpeakerProductGallery />

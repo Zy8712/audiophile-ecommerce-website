@@ -8,7 +8,7 @@ function EarphonesProductListings() {
 
     return (
         <>
-            <div className="w-full h-[560px] flex justify-between items-center">
+            <div className="w-full h-[724px] sm:h-[706px] lg:h-[560px] flex justify-between items-center">
                 <ProductCardImageLeft
                     previewImageDesktop={YX1EARPHONES}
                     previewImageTablet={YX1EARPHONES_Tablet}

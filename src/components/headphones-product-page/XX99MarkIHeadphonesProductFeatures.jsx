@@ -25,7 +25,7 @@ function XX99MarkIHeadphonesProductFeatures() {
                     </div>
                 </div>
 
-                <div className="w-[350px] h-[225px]">
+                <div className="w-full sm:w-[549px] lg:w-[350px] h-[184px] sm:h-[157px] lg:h-[225px] flex flex-col sm:flex-row lg:flex-col justify-between">
                     <h2 className="font-bold text-2xl sm:text-[32px] leading-9 tracking-[1.14px] uppercase text-black mb-6 sm:mb-8 inline lg:block">
                         In the box
                     </h2>

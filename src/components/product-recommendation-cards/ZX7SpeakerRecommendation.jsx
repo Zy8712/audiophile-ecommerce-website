@@ -11,7 +11,7 @@ function ZX7SpeakerRecommendation() {
                 previewImageDesktop={Product_Recommend_Preview_Desktop}
                 previewImageTablet={Product_Recommend_Preview_Tablet}
                 previewImageMobile={Product_Recommend_Preview_Mobile}
-                productName="ZX9 Speaker"
+                productName="ZX7 Speaker"
                 pageLink="/speakers/zx7speaker"
             />
         </>

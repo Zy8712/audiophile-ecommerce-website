@@ -1,8 +1,11 @@
 import { Link, useLocation } from 'wouter';
+import React, { useState } from "react";
 
 import Audiophile_Logo from "../assets/shared/desktop/logo.svg";
 import Cart_Icon from "../assets/shared/desktop/icon-cart.svg";
 import Menu_Icon from "../assets/shared/tablet/icon-hamburger.svg";
+
+import MobileMenu from './MobileMenu';
 
 import "../App.css";
 
@@ -12,13 +15,20 @@ function Navbar({ toggleCart, showCart }) {
 
     const isActive = (route) => location === route;
 
+
+    const[showMobileMenu, setShowMobileMenu] = useState(false);
+
+    const toggleMobileMenu = () =>{
+      setShowMobileMenu(!showMobileMenu);
+    }
+
     return (
         <>
-            <div className="w-full h-24 flex justify-center items-center bg-black fixed z-50 rounded-b-3xl">
+            <div className={`w-screen custom-sm:w-full h-[90px] sm:h-24 flex justify-center items-center bg-black fixed z-50 ${showMobileMenu ? 'rounded-none' : 'rounded-b-3xl'}`}>
                 <div className="w-full h-full flex justify-between items-center mx-6 sm:mx-10 md:mx-20 lg:mx-[165px] relative transition-all duration-500 ease-in-out">
                     <div className="inline-block custom-lg:hidden">
-                        <button>
-                            <img src={Menu_Icon} className="w-6 h-5" />
+                        <button onClick={toggleMobileMenu}>
+                            <img src={Menu_Icon} className={`w-6 h-5 ${showMobileMenu ? 'custom-dark-orange-filter-selected' : 'custom-dark-orange-filter'}`} />
                         </button>
                     </div>
 
@@ -61,10 +71,13 @@ function Navbar({ toggleCart, showCart }) {
                         <div className="bg-theme-dark-orange absolute z-[60px] -top-2 -right-3 rounded-full w-4 h-4 text-[8px] text-center flex flex-col justify-center items-center text-white font-bold">
                             <span>0</span>
                         </div>
-
                     </div>
 
                 </div>
+
+                <MobileMenu 
+                    showMobileMenu={showMobileMenu}
+                />
             </div>
         </>
     );

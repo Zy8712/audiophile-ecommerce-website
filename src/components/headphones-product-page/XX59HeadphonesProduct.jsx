@@ -5,17 +5,16 @@ import XX59HeadphonesProductPageRecommendations from "./XX59HeadphonesProductPag
 
 import ProductCategories from "../ProductCategories";
 import SiteDescription from "../SiteDescription";
+import GoBackButton from "../GoBackButton";
 
 function XX59HeadphonesProduct() {
 
     return (
         <>
             <div className="w-full">
-                <div className="block text-[15px] font-medium leading-[25px] opacity-50 mb-14">
-                    <span className="text-black hover:text-theme-dark-orange cursor-pointer">
-                        Go Back
-                    </span>
-                </div>
+                <GoBackButton 
+                    backLink="/headphones"
+                />
                 <div className="w-full h-[5251px] sm:h-[3456px] lg:h-[3713px] flex flex-col justify-between items-center">
                     <XX59HeadphonesProductBlock />
                     <XX59HeadphonesProductFeatures />

@@ -7,7 +7,7 @@ function ProductCategories() {
 
     return (
         <>
-            <div className="w-full h-[683px] md:h-[284px] flex flex-col md:flex-row justify-between items-center">
+            <div className="w-full h-[683px] sm:h-[284px] flex flex-col md:flex-row justify-between items-center">
 
                 <ProductCategoryCard
                     categoryLink="/headphones"

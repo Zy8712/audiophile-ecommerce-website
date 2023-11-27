@@ -12,11 +12,9 @@ function ZX7SpeakerProduct() {
     return (
         <>
             <div className="w-full">
-                <div className="block text-[15px] font-medium leading-[25px] opacity-50 mb-14">
-                    <span className="text-black hover:text-theme-dark-orange cursor-pointer">
-                        Go Back
-                    </span>
-                </div>                
+                <GoBackButton 
+                    backLink="/speakers"
+                />
                 <div className="w-full h-[5251px] sm:h-[3456px] lg:h-[3713px] flex flex-col justify-between items-center">
                     <ZX7SpeakerProductBlock />
                     <ZX7SpeakerProductFeatures />

@@ -47,11 +47,18 @@ function App() {
     setShowCart(!showCart);
   }
 
+  const [cartItemCount, setCartItemCount] = useState(1);
+
+  const updateCartItemCount = () =>{
+    setCartItemCount();
+  }
+
+
   return (
     <>
       <Router>
 
-        <Navbar toggleCart={toggleCart} showCart={showCart} />
+        <Navbar toggleCart={toggleCart} showCart={showCart} cartItemCount={cartItemCount} />
         <ScrollToTop />
         <Route path="/" component={Home} />
         <Route path="/headphones" component={Headphones} />
@@ -64,7 +71,7 @@ function App() {
         <Route path="/speakers/zx9speaker" component={ZX9Speaker} />
         <Route path="/speakers/zx7speaker" component={ZX7Speaker} />
         <Route path="/earphones/yx1wirelessearphones" component={YX1WirelessEarphones} />
-        <Cart toggleCart={toggleCart} showCart={showCart} />
+        <Cart toggleCart={toggleCart} showCart={showCart} cartItemCount={cartItemCount} updateCartItemCount={updateCartItemCount} />
 
         {/*
 

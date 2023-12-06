@@ -9,12 +9,10 @@ import MobileMenu from './MobileMenu';
 
 import "../App.css";
 
-function Navbar({ toggleCart, showCart }) {
+function Navbar({ toggleCart, showCart, cartItemCount }) {
 
     const [location] = useLocation();
-
     const isActive = (route) => location === route;
-
 
     const[showMobileMenu, setShowMobileMenu] = useState(false);
 
@@ -65,11 +63,11 @@ function Navbar({ toggleCart, showCart }) {
 
                     <div className="relative">
                         <button onClick={toggleCart}>
-                            <img src={Cart_Icon} className={`${showCart ? 'custom-dark-orange-filter-selected' : 'custom-dark-orange-filter'}`} />
+                            <img src={Cart_Icon} className={`custom-dark-orange-filter`} />
                         </button>
 
                         <div className="bg-theme-dark-orange absolute z-[60px] -top-2 -right-3 rounded-full w-4 h-4 text-[8px] text-center flex flex-col justify-center items-center text-white font-bold">
-                            <span>0</span>
+                            <span>{cartItemCount}</span>
                         </div>
                     </div>
 

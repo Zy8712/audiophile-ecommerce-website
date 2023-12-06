@@ -5,11 +5,3 @@
 .custom-dark-orange-filter:hover{
     filter: invert(41%) sepia(67%) saturate(403%) hue-rotate(338deg) brightness(95%) contrast(96%);
 }
-
-.custom-dark-orange-filter-selected{
-    filter: invert(41%) sepia(67%) saturate(403%) hue-rotate(338deg) brightness(95%) contrast(96%);
-}
-
-.custom-dark-orange-filter-selected:hover{
-    filter: none;
-}

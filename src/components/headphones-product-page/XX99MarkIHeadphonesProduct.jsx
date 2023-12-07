@@ -7,7 +7,7 @@ import ProductCategories from "../ProductCategories";
 import SiteDescription from "../SiteDescription";
 import GoBackButton from "../GoBackButton";
 
-function XX99MarkIHeadphonesProduct() {
+function XX99MarkIHeadphonesProduct({xx99m1ItemCount, updateXX99M1ItemCount}) {
 
     return (
         <>
@@ -16,7 +16,7 @@ function XX99MarkIHeadphonesProduct() {
                     backLink="/headphones"
                 />
                 <div className="w-full h-[5251px] sm:h-[3456px] lg:h-[3713px] flex flex-col justify-between items-center">
-                    <XX99MarkIHeadphonesProductBlock />
+                    <XX99MarkIHeadphonesProductBlock xx99m1ItemCount={xx99m1ItemCount} updateXX99M1ItemCount={updateXX99M1ItemCount} />
                     <XX99MarkIHeadphonesProductFeatures />
                     <XX99MarkIHeadphonesProductGallery />
                     <XX99MarkIHeadphonesProductPageRecommendations />

@@ -7,7 +7,7 @@ import ProductCategories from "../ProductCategories";
 import SiteDescription from "../SiteDescription";
 import GoBackButton from "../GoBackButton";
 
-function ZX9SpeakerProduct() {
+function ZX9SpeakerProduct({zx9ItemCount, updateZX9ItemCount}) {
 
     return (
         <>
@@ -16,7 +16,7 @@ function ZX9SpeakerProduct() {
                     backLink="/speakers"
                 />
                 <div className="w-full h-[5251px] sm:h-[3456px] lg:h-[3713px] flex flex-col justify-between items-center">
-                    <ZX9SpeakerProductBlock />
+                    <ZX9SpeakerProductBlock zx9ItemCount={zx9ItemCount} updateZX9ItemCount={updateZX9ItemCount} />
                     <ZX9SpeakerProductFeatures />
                     <ZX9SpeakerProductGallery />
                     <ZX9SpeakerProductPageRecommendations />

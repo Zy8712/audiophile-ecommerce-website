@@ -9,13 +9,13 @@ function ProductCategoryCard(props) {
     return (
         <>
             <Link to={props.categoryLink}>
-                <div className="w-full md:w-[230px] custom-md:w-[275px] lg:w-[300px] custom-lg:w-[350px] h-[217px] md:h-full flex flex-col justify-end transition-all duration-500 ease-in-out">
-                    <div className="w-full h-[160px] md:h-[204px] flex flex-col justify-end items-center bg-theme-light-grey rounded-lg relative group hover:cursor-pointer">
+                <div className={`w-full md:w-[230px] custom-md:w-[275px] lg:w-[300px] custom-lg:w-[350px] ${props.mobileMenuVer ? 'h-[160px]' : 'h-[217px]'}  md:h-full flex flex-col justify-end transition-all duration-500 ease-in-out`}>
+                    <div className={`w-full ${props.mobileMenuVer ? 'h-[110px]' : 'h-[160px]'} md:h-[204px] flex flex-col justify-end items-center bg-theme-light-grey rounded-lg relative group hover:cursor-pointer`}>
 
                         <img src={props.categoryImage} className={props.categoryImageCSS} />
 
-                        <div className="w-full h-[58px] text-center mb-[30px]">
-                            <span className="text-black block text-lg font-bold uppercase leading-none tracking-[1.29px] mb-[15px]">
+                        <div className={`w-full h-[58px] text-center ${props.mobileMenuVer ? 'mb-1' : 'mb-[30px]'}`}>
+                            <span className={`text-black block text-lg font-bold uppercase leading-none tracking-[1.29px] ${props.mobileMenuVer ? 'mb-2' : 'mb-[15px]'}`}>
                                 {props.categoryName}
                             </span>
                             <div className="flex justify-center items-center">

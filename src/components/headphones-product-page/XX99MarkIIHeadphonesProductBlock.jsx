@@ -3,7 +3,7 @@ import Product_Preview_Desktop from "../../assets/product-xx99-mark-two-headphon
 import Product_Preview_Tablet from "../../assets/product-xx99-mark-two-headphones/tablet/image-product.jpg";
 import Product_Preview_Mobile from "../../assets/product-xx99-mark-two-headphones/mobile/image-product.jpg";
 
-function XX99MarkIIHeadphonesProductBlock() {
+function XX99MarkIIHeadphonesProductBlock({xx99m2ItemCount, updateXX99M2ItemCount}) {
 
     return (
         <>
@@ -18,6 +18,8 @@ function XX99MarkIIHeadphonesProductBlock() {
                 audio. It redefines your premium headphone experience by reproducing the balanced 
                 depth and precision of studio-quality sound."
                 productPrice="2,999"
+                itemCount={xx99m2ItemCount}
+                updateItemCount={updateXX99M2ItemCount}
             />
         </>
     );

@@ -16,6 +16,10 @@ function ProductPageListingBlock(props) {
         }
     }
 
+    const adjustCartCount = () =>{
+        props.updateItemCount(productCount);
+    }
+
     return (
         <>
             <div className={`w-[327px] sm:w-[690px] custom-md:w-[85%] lg:w-full ${props.newProduct ? 'h-[755px]' : 'h-[720px]'} sm:h-[480px] lg:h-[560px] flex flex-col sm:flex-row justify-between items-center transition-all duration-500 ease-in-out`}>
@@ -50,9 +54,14 @@ function ProductPageListingBlock(props) {
                             </button>
                         </div>
 
-                        <button className="w-40 h-12 uppercase bg-theme-dark-orange text-white font-bold tracking-[1px] text-[13px] hover:bg-theme-light-orange">
+                        <button className="w-40 h-12 uppercase bg-theme-dark-orange text-white font-bold tracking-[1px] text-[13px] hover:bg-theme-light-orange"
+                                onClick={adjustCartCount} >
                             Add to Cart
                         </button>
+
+                        <div className="w-12 h-12 flex justify-center items-center rounded-full border-black border-2 border-solid ml-3 bg-blue-500">
+                            <span className="text-black ">{props.itemCount}</span>
+                        </div>
                     </div>
                 </div>
             </div>

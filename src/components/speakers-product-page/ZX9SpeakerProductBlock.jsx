@@ -3,7 +3,7 @@ import Product_Preview_Desktop from "../../assets/product-zx9-speaker/desktop/im
 import Product_Preview_Tablet from "../../assets/product-zx9-speaker/tablet/image-product.jpg";
 import Product_Preview_Mobile from "../../assets/product-zx9-speaker/mobile/image-product.jpg";
 
-function ZX9SpeakerProductBlock() {
+function ZX9SpeakerProductBlock({zx9ItemCount, updateZX9ItemCount}) {
 
     return (
         <>
@@ -19,6 +19,8 @@ function ZX9SpeakerProductBlock() {
                 truly wireless connectivity -- creating new possibilities for more 
                 pleasing and practical audio setups."
                 productPrice="4,500"
+                itemCount={zx9ItemCount}
+                updateItemCount={updateZX9ItemCount}
             />
         </>
     );

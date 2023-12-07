@@ -3,18 +3,23 @@ import { Link } from 'wouter';
 
 import EmptyCart from "../assets/cart/shopping-cart-14-svgrepo-com.svg";
 
-function Cart({ toggleCart, showCart, cartItemCount, updateCartItemCount }) {
+function Cart({ toggleCart, showCart, cartItemCount, totalBill, updateCartItemCount }) {
+
+    // Function to format number with a comma for thousands separator
+    const formatNumberWithComma = (number) => {
+        return number.toLocaleString(); // This will use the default locale settings
+    };
 
     return (
         <>
             <div className={`w-[360px] ${cartItemCount == 0 ? 'h-[240px]' : 'min-h-[240px] max-h-[488px]'} bg-white rounded-lg fixed z-50 top-28 right-2 p-6 ${showCart ? 'flex' : 'hidden'}`}>
-                
-                <div className={`w-full h-full ${cartItemCount == 0 ? 'flex' :'hidden'} justify-center items-center p-1`}>
+
+                <div className={`w-full h-full ${cartItemCount == 0 ? 'flex' : 'hidden'} justify-center items-center p-1`}>
                     <div className="w-full h-full flex flex-col justify-center items-center text-center">
                         <img src={EmptyCart} className="w-16 mb-3" />
                         <p className="text-xl font-bold mb-2">Your cart is <span className="text-theme-dark-orange">empty</span>!</p>
                         <p className="text-xs">
-                            Add items you're interested in with the "Add to cart" button. 
+                            Add items you're interested in with the "Add to cart" button.
                             Click back here to check your cart, or to proceed to checkout.
                         </p>
                         <p className="text-xs">
@@ -41,7 +46,7 @@ function Cart({ toggleCart, showCart, cartItemCount, updateCartItemCount }) {
                             Total
                         </span>
                         <span className="text-black text-lg font-bold">
-                            $5,396
+                            $ {formatNumberWithComma(totalBill)}
                         </span>
                     </div>
 

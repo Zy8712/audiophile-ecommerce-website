@@ -159,7 +159,31 @@ function App() {
           )}
         </Route>
 
-        <Cart toggleCart={toggleCart} showCart={showCart} cartItemCount={cartItemCount} totalBill={totalBill} />
+        <Cart
+          toggleCart={toggleCart}
+          showCart={showCart}
+
+          cartItemCount={cartItemCount}
+          totalBill={totalBill}
+
+          xx99m2ItemCount={xx99m2ItemCount}
+          updateXX99M2ItemCount={updateXX99M2ItemCount}
+
+          xx99m1ItemCount={xx99m1ItemCount}
+          updateXX99M1ItemCount={updateXX99M1ItemCount}
+
+          xx59ItemCount={xx59ItemCount}
+          updateXX59ItemCount={updateXX59ItemCount}
+
+          zx9ItemCount={zx9ItemCount}
+          updateZX9ItemCount={updateZX9ItemCount}
+
+          zx7ItemCount={zx7ItemCount}
+          updateZX7ItemCount={updateZX7ItemCount}
+
+          yx1ItemCount={yx1ItemCount}
+          updateYX1ItemCount={updateYX1ItemCount}
+        />
 
         {/*
 

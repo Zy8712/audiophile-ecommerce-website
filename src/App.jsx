@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Route, Router, useRouter, useLocation } from "wouter";
+import { Route, Router } from "wouter";
 
 import './App.css';
 
@@ -20,24 +20,6 @@ import SiteFooter from "./components/SiteFooter";
 
 import ScrollToTop from "./pages/ScrollToTop";
 import Cart from "./components/Cart";
-
-/*
-const Scope = (props) => {
-  const router = useRouter();
-  const [parentLocation] = useLocation();
-
-  const nestedBase = `${router.base}${props.base}`;
-
-  // don't render anything outside of the scope
-  if (!parentLocation.startsWith(nestedBase)) return null;
-
-  // we need key to make sure the router will remount if the base changes
-  return (
-    <Router base={nestedBase} key={nestedBase}>
-      {props.children}
-    </Router>
-  );
-};*/
 
 function App() {
 
@@ -77,6 +59,15 @@ function App() {
     setYX1ItemCount(itemCount);
   };
 
+  const resetCart = () => {
+    setXX99M2ItemCount(0);
+    setXX99M1ItemCount(0);
+    setXX59ItemCount(0);
+    setZX9ItemCount(0);
+    setZX7ItemCount(0);
+    setYX1ItemCount(0);
+  };
+
   // Total Number of Items in Card
   const [cartItemCount, setCartItemCount] = useState(0);
   useEffect(() => {
@@ -103,7 +94,15 @@ function App() {
         <Route path="/headphones" component={Headphones} />
         <Route path="/speakers" component={Speakers} />
         <Route path="/earphones" component={Earphones} />
-        <Route path="/checkout" component={Checkout} />
+
+        <Route path="/checkout">
+          {(params) => (
+            <Checkout
+              cartItemCount={cartItemCount}
+              totalBill={totalBill}
+            />
+          )}
+        </Route>
 
         <Route path="/headphones/xx99markiiheadphones">
           {(params) => (
@@ -183,29 +182,9 @@ function App() {
 
           yx1ItemCount={yx1ItemCount}
           updateYX1ItemCount={updateYX1ItemCount}
+
+          resetCart={resetCart}
         />
-
-        {/*
-
-        <Scope base="/headphones">
-          <Route path="/xx99markiiheadphones" component={XX99MarkIIHeadphones} />
-          <Route path="/xx99markiheadphones" component={XX99MarkIHeadphones} />
-          <Route path="/xx59headphones" component={XX59Headphones} />
-          <Route path="/" component={Headphones} />
-        </Scope>
-
-        <Scope base="/speakers">
-          <Route path="/zx9speaker" component={ZX9Speaker} />
-          <Route path="/zx7speaker" component={ZX7Speaker} />
-          <Route path="/" component={Speakers} />
-        </Scope>
-
-        <Scope base="/earphones">
-          <Route path="/yx1wirelessearphones" component={YX1WirelessEarphones} />
-          <Route path="/" component={Earphones} />
-        </Scope>
-
-        */}
 
         <SiteFooter />
 

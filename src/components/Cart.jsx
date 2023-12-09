@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import { Link } from 'wouter';
 
 import EmptyCart from "../assets/cart/shopping-cart-14-svgrepo-com.svg";
+import XMark from "../assets/cart/cross-circle-svgrepo-com.svg";
+import DownArrowCart from "../assets/cart/shopping-cart-12-white-svgrepo-com.svg";
 
 import XX99M2CartProductCard from './cart-items/XX99M2CartProductCard';
 import XX99M1CartProductCard from './cart-items/XX99M1CartProductCard';
@@ -21,7 +23,7 @@ function Cart(props) {
 
     return (
         <>
-            <div className={`w-[360px] ${props.cartItemCount == 0 ? 'h-[240px]' : 'min-h-[240px] max-h-[488px]'} bg-white rounded-lg fixed z-50 top-28 right-2 p-6 ${props.showCart ? 'flex' : 'hidden'}`}>
+            <div className={`w-[360px] ${props.cartItemCount == 0 ? 'h-[240px]' : 'min-h-[240px] max-h-[488px]'} bg-white rounded-lg fixed z-50 top-28 right-2 p-6 overflow-hidden ${props.showCart ? 'flex' : 'hidden'}`}>
 
                 <div className={`w-full h-full ${props.cartItemCount == 0 ? 'flex' : 'hidden'} justify-center items-center p-1`}>
                     <div className="w-full h-full flex flex-col justify-center items-center text-center">
@@ -41,7 +43,7 @@ function Cart(props) {
                         <h5 className="text-lg tracking-[1.29px] font-bold text-black uppercase">
                             Cart ({props.cartItemCount})
                         </h5>
-                        <span className="font-medium text-[15px] leading-[25px] opacity-50 text-black underline">
+                        <span onClick={props.resetCart} className="font-medium text-[15px] leading-[25px] opacity-50 text-black underline hover:cursor-pointer hover:text-theme-dark-orange">
                             Remove all
                         </span>
                     </div>
@@ -100,16 +102,23 @@ function Cart(props) {
                     </div>
 
                     <Link to="/checkout">
-                        <button className="w-full h-12 bg-theme-dark-orange rounded-sm text-white uppercase font-bold tracking-[1px] text-[13px] hover:bg-theme-light-orange">
+                        <button className="w-full h-12 flex justify-center items-center bg-theme-dark-orange rounded-sm text-white uppercase font-bold tracking-[1px] text-[13px] hover:bg-theme-light-orange">
+                            <img src={DownArrowCart} className="h-7 mr-2" />
                             Checkout
                         </button>
                     </Link>
 
                 </div>
 
+                <button onClick={props.toggleCart} className="w-10 h-10 absolute top-0 right-0 rounded-bl-full rounded-tr-lg bg-theme-dark-orange">
+                    <div className="w-full h-full flex justify-end items-start rounded-bl-full">
+                        <img src={XMark} className="w-5 h-5 mt-[6px] mr-[6px]" />
+                    </div>
+                </button>
+
             </div>
 
-            <div className={`w-screen h-screen fixed z-40 top-0 bg-theme-light-translucent-grey ${props.showCart ? 'block' : 'hidden'}`}>
+            <div onClick={props.toggleCart} className={`w-screen h-screen fixed z-40 top-0 bg-theme-light-translucent-grey ${props.showCart ? 'block' : 'hidden'}`}>
             </div>
         </>
     );

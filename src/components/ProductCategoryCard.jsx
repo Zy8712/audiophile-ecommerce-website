@@ -1,6 +1,7 @@
 import { Link } from 'wouter';
 
 import RightArrow_Icon from "../assets/shared/desktop/icon-arrow-right.svg";
+import ShoppingBag from "../assets/cart/shopping-bag-grey-hsl-0-0-50-svgrepo-com.svg";
 
 import "../App.css";
 
@@ -19,6 +20,7 @@ function ProductCategoryCard(props) {
                                 {props.categoryName}
                             </span>
                             <div className="flex justify-center items-center">
+                                <img src={ShoppingBag} className="h-4 mr-2" />
                                 <span className="text-[13px] tracking-[1px] uppercase font-bold opacity-50 group-hover:text-theme-dark-orange group-hover:opacity-100">
                                     Shop
                                 </span>

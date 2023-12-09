@@ -71,6 +71,9 @@ function Navbar({ toggleCart, showCart, cartItemCount }) {
                         </div>
                     </div>
 
+                    <div className="w-full h-[0.5px] absolute -bottom-[0.5px] bg-white opacity-20">
+                    </div>
+
                 </div>
 
                 <MobileMenu 

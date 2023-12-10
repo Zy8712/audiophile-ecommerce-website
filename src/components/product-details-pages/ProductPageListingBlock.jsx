@@ -3,6 +3,8 @@ import PlusCart from "../../assets/cart/shopping-cart-16-white-svgrepo-com.svg";
 import MinusCart from "../../assets/cart/shopping-cart-17-white-svgrepo-com.svg";
 import CheckCart from "../../assets/cart/shopping-cart-21-white-svgrepo-com.svg";
 
+import EmptyCart from "../../assets/cart/shopping-cart-11-svgrepo-com.svg";
+
 function ProductPageListingBlock(props) {
 
     const [productCount, setCount] = useState(1);
@@ -77,9 +79,12 @@ function ProductPageListingBlock(props) {
                             {props.itemCount == 0 ? 'Add to Cart' : 'Update Cart'}
                         </button>
 
-                        <div className="w-12 h-12 flex justify-center items-center rounded-full ml-3 bg-gradient-to-tr from-white to-theme-dark-orange"
+                        <div className="w-12 h-12 relative flex justify-center items-center ml-3"
                             title={`You currently have ${props.itemCount} of this item in your cart`}>
-                            <span className="text-white">{props.itemCount}</span>
+                            <img src={EmptyCart} className="h-12" />
+                            <span className="w-6 h-6 flex justify-center items-center text-center font-bold text-theme-dark-orange absolute z-10 top-[6px] left-[17px]">
+                                {props.itemCount}
+                            </span>
                         </div>
                     </div>
                 </div>

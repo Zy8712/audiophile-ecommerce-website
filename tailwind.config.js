@@ -16,6 +16,7 @@ export default {
         'theme-grayish-black' : '#4C4C4C',
         'theme-super-light-grey' : 'rgba(0,0,0,0.1)',
         'theme-light-translucent-grey' : 'rgba(0,0,0,0.6)',
+        'theme-checkout-grey' : '#CFCFCF',
       },
       fontFamily: {
         'theme-manrope': ['Manrope', 'sans-serif'], 

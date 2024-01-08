@@ -47,7 +47,7 @@ function CartProductCard(props) {
                 </div>
 
                 <div className="w-24 h-full flex items-center relative">
-                    <button onClick={removeItem} title="Remove all of this item from cart"
+                    <button onClick={removeItem} title="Remove all items of this type from cart"
                         className="w-10 h-10 flex justify-center items-center absolute -left-11">
                         <img src={UpArrowCart} className="h-8" />
                     </button>

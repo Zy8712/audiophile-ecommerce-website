@@ -1,8 +1,13 @@
-# React + Vite
+<div align="center">
+  <img src="./public/headphones-svgrepo-com.svg" width="250px" />
+  <h1>Audiophile Ecommerce Multi-Page Website</h1>
+  
+  ![skills](https://skillicons.dev/icons?i=html,css,js,react,tailwind,vite,vercel,figma&theme=dark)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+  <p>
+    <img align="center" src="https://img.shields.io/badge/Coded_By-Bryan_Li-0072b1?style=flat" />
+    <img align="center" src="https://img.shields.io/badge/Status-In_Progress-D87D4A?style=flat" />
+    <img align="center" src="https://img.shields.io/badge/FEM_Project-TRUE-3F54A3?style=flat&logo=frontend-mentor&logoColor=white" />
+    <img align="center" src="https://img.shields.io/badge/Project_Difficulty-GURU-ed2c49?style=flat" />
+  </p>
+</div>
